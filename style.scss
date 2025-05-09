@@ -1,0 +1,75 @@
+$background-color:#F3E7D0;
+$primary-color:#187A07; 
+$font-color:black;
+$paragraph-font:'Open Sans', sans-serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background-color;
+    font-family: $paragraph-font;
+}
+
+#text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: $paragraph-font;
+    font-size: 20px;
+}
+
+
+.top, .bottom {
+    color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    font-size: 125px;
+    padding: 0.5em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 1em;
+    margin: 0 auto;
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: $primary-color;
+    color: white;  
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+// media til mobilformat
+@media (max-width: 768px) {
+    .container {
+        margin: 1em;
+        padding: 1.5em;
+        max-width: 100%;
+    }
+
+    .top, .bottom {
+      justify-content: center;
+      gap: 3em;
+    }
+
+    .top i,
+    .bottom i {
+      font-size: 70px;
+    }
+}
